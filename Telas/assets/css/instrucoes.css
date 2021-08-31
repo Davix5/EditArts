@@ -80,7 +80,7 @@ h6 {
 #header {
   z-index: 997;
   transition: all 0.5s;
-  padding: 4px 0 4px 0;
+  padding: 4px 0 0px 0;
   background: #fff;
   box-shadow: 0px 4px 4px rgba(22, 25, 26, 0.05);
 
@@ -167,7 +167,6 @@ h6 {
 .navbar a:hover,
 .navbar li:hover>a {
   color: #3498db;
-  /* border-bottom: 3px solid #0FA9EA; */
 }
 
 .navbar .getstarted {
