@@ -80,7 +80,7 @@ h6 {
 #header {
   z-index: 997;
   transition: all 0.5s;
-  padding: 34px 0 24px 0;
+  padding: 25px 0 4px 0;
   background: #fff;
 }
 
@@ -105,7 +105,7 @@ h6 {
 }
 
 #header .logo img {
-  padding: 0;
+  padding-top: 0;
   margin: 0;
   /* max-height: 40px; */
   width: 157px;
@@ -352,12 +352,11 @@ h6 {
 #hero {
   width: 100%;
   height: 70vh;
-  margin-top: 130px;
+  margin-top: 0px;
 }
 
 #hero h1 {
   margin: 0 0 10px 0;
-  rgba(22, 25, 26, 0.8);
   font-family: Poppins;
   font-style: normal;
   font-weight: 500;
@@ -411,12 +410,12 @@ h6 {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  rgba(22, 25, 26, 0.8);
 }
 
 #hero .btn-get-started {
 
   margin-top: 32px;
+  margin-right: 16px;
   line-height: 21px;
   font-family: Poppins;
   font-weight: 500;
@@ -425,18 +424,15 @@ h6 {
   border-radius: 100px;
   letter-spacing: 1px;
   display: inline-block;
-  padding: 5px 30px;
+  padding: 8px 32px;
   transition: 0.5s;
   color: #FFFFFF;
-  border: 2px solid #0FA9EA;
 
-  width: 183px;
-  height: 37px;
 }
 
 #hero .btn-get-started:hover {
-  background: #FFFFFF;
-  color: #0FA9EA;
+  background: #099ADC;
+  filter: drop-shadow(0px 4px 4px rgba(22, 25, 26, 0.25));
 }
 
 #hero .btn-get-started-secondary {
@@ -448,21 +444,16 @@ h6 {
   border-radius: 100px;
   letter-spacing: 1px;
   display: inline-block;
-  padding: 5px 30px;
+  padding: 11px 16px 14px 16px;
   transition: 0.5s;
 
   background: rgba(229, 229, 229, 0.3);
-  ;
-  border: 2px solid rgba(229, 229, 229, 0.3);
   color: rgba(22, 25, 26, 0.8);
-  width: 136px;
-  height: 37px;
 }
 
 #hero .btn-get-started-secondary:hover {
-  border: 2px solid #0FA9EA;
-  background: #FFFFFF;
-  color: #0FA9EA;
+  background: rgba(229, 229, 229, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(22, 25, 26, 0.15));
 }
 
 
@@ -496,19 +487,38 @@ h6 {
 }
 
 @media (max-width: 768px) {
+
+  #header {
+    z-index: 997;
+    transition: all 0.5s;
+    padding: 19px 0 12px 0;
+    background: #fff;
+  }
+
   #hero {
     margin-top: 20px;
   }
 
   #hero h1 {
-    font-size: 28px;
+    font-size: 16px;
     line-height: 36px;
+    text-align: center;
   }
+
+
 
   #hero h2 {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
+  }
+
+  #header .logo img {
+    padding: 0;
+    margin: 0;
+    /* max-height: 40px; */
+    width: 75px;
+    height: 35px;
   }
 
   #hero .hero-img img {
@@ -522,25 +532,7 @@ h6 {
   }
 }
 
-@-webkit-keyframes up-down {
-  0% {
-    transform: translateY(10px);
-  }
 
-  100% {
-    transform: translateY(-10px);
-  }
-}
-
-@keyframes up-down {
-  0% {
-    transform: translateY(10px);
-  }
-
-  100% {
-    transform: translateY(-10px);
-  }
-}
 
 /*--------------------------------------------------------------
 # Sections General
@@ -750,6 +742,7 @@ section {
 .counts .content .count-box a:hover {
   color: #6f6f6f;
 }
+
 
 @media (max-width: 1024px) {
   .counts .image {
