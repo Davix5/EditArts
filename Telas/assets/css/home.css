@@ -497,12 +497,17 @@ h6 {
 
   #hero {
     margin-top: 20px;
+    text-align: center;
   }
 
   #hero h1 {
     font-size: 16px;
     line-height: 36px;
     text-align: center;
+  }
+
+  #hero h1 br {
+    display: none;
   }
 
 
