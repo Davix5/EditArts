@@ -365,7 +365,7 @@ h6 {
 
 }
 
-#hero span {
+#hero .userItem {
   color: #0FA9EA;
 }
 
@@ -376,6 +376,10 @@ h6 {
   font-size: 16px;
   line-height: 24px;
   color: rgba(0, 0, 0, 0.4);
+}
+
+#hero .visible-mobile {
+  display: none;
 }
 
 #hero .contact {
@@ -488,6 +492,8 @@ h6 {
 
 @media (max-width: 768px) {
 
+
+
   #header {
     z-index: 997;
     transition: all 0.5s;
@@ -496,8 +502,7 @@ h6 {
   }
 
   #hero {
-    margin-top: 20px;
-    text-align: center;
+    margin-top: -90px;
   }
 
   #hero h1 {
@@ -511,17 +516,35 @@ h6 {
   }
 
 
-
   #hero h2 {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
+    display: none;
+  }
+
+  #hero p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+
+    color: rgba(18, 19, 21, 0.4);
+  }
+
+  #hero .visible-desktop {
+    display: none;
+  }
+
+  #hero .visible-mobile {
+    display: initial;
   }
 
   #header .logo img {
     padding: 0;
     margin: 0;
-    /* max-height: 40px; */
     width: 75px;
     height: 35px;
   }
