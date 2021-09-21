@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-	<title>Instituição de Saúde</title>
+	<title>Tipo de Atendimento</title>
 	<meta content="" name="description">
 	<meta content="" name="keywords">
 
@@ -28,7 +28,8 @@
 	<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
 	<!-- Template Main CSS File -->
-	<link href="assets/css/instituicao.css" rel="stylesheet">
+	<link href="assets/css/tipoAtendimento.css" rel="stylesheet">
+
 
 
 </head>
@@ -59,40 +60,102 @@
 
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-					<h1 data-aos="fade-up">2 - Instituição de Saúde</h1>
+				<div class="col-lg-10 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+					<h1 data-aos="fade-up">3 - Tipo de Atendimento</h1>
 					<h2 data-aos="fade-up" data-aos-delay="400">Dados obrigátorios são acompanhados de *
 					</h2>
 
-					<!-- Form -->
-					<form class="row" action="">
+					<!-- Cards -->
+					<div class="row">
 						<div class="row g-2">
 							<div class="col-auto">
-								<label>Obrigatório *</label>
-								<select class="form-select" aria-label="Default select example">
-									<option selected>Selecione o UF</option>
-									<option>null</option>
-									<option>null</option>
-									<option>null</option>
-								</select>
+								<button class="card-body">
+									<h5 class="card-title"><i class="bi bi-person-circle"></i></h5>
+									<p class="card-text">Atendimento Médico</p>
+								</button>
 							</div>
+
 							<div class="col-auto">
-								<label>Obrigatório *</label>
-								<select class="form-select" aria-label="Default select example">
-									<option selected>Selecione o Município</option>
-									<option>null</option>
-									<option>null</option>
-									<option>null</option>
-								</select>
+								<button class="card-body">
+									<h5 class="card-title"><i class="bi bi-person-circle"></i></h5>
+									<p class="card-text">Atendimento Enfermagem</p>
+								</button>
 							</div>
+
 							<div class="col-auto">
-								<label>Obrigatório *</label>
-								<select class="form-select" aria-label="Default select example">
-									<option selected>Bairro/Distrito</option>
-									<option>null</option>
-									<option>null</option>
-									<option>null</option>
-								</select>
+								<button class="card-body">
+									<h5 class="card-title"><i class="bi bi-person-circle"></i></h5>
+									<p class="card-text">Atendimento Dentista</p>
+								</button>
+							</div>
+
+							<div class="col-auto">
+								<button class="card-body">
+									<h5 class="card-title"><i class="bi bi-person-circle"></i></h5>
+									<p class="card-text">Setor de Exames ou Laboratórios</p>
+								</button>
+							</div>
+						</div>
+						<!--  -->
+						<!--  -->
+						<div class="row g-2">
+							<div class="col-auto">
+								<button class="card-body">
+									<h5 class="card-title"><i class="bi bi-person-circle"></i></h5>
+									<p class="card-text">Setor Farmácia</p>
+								</button>
+							</div>
+
+							<div class="col-auto">
+								<button class="card-body">
+									<h5 class="card-title"><i class="bi bi-person-circle"></i></h5>
+									<p class="card-text">Atendimento Fisioterapia</p>
+								</button>
+							</div>
+
+							<div class="col-auto">
+								<button class="card-body">
+									<h5 class="card-title"><i class="bi bi-person-circle"></i></h5>
+									<p class="card-text">Atendimento Nutricionista</p>
+								</button>
+							</div>
+
+							<div class="col-auto">
+								<button class="card-body">
+									<h5 class="card-title"><i class="bi bi-person-circle"></i></h5>
+									<p class="card-text">Atendimento Terapia Ocupacional</p>
+								</button>
+							</div>
+						</div>
+						<!--  -->
+						<!--  -->
+						<div class="row g-2">
+							<div class="col-auto">
+								<button class="card-body">
+									<h5 class="card-title"><i class="bi bi-person-circle"></i></h5>
+									<p class="card-text">Atedimento Psicologia</p>
+								</button>
+							</div>
+
+							<div class="col-auto">
+								<button class="card-body">
+									<h5 class="card-title"><i class="bi bi-person-circle"></i></h5>
+									<p class="card-text">Atendimento Assistência Social</p>
+								</button>
+							</div>
+
+							<div class="col-auto">
+								<button class="card-body">
+									<h5 class="card-title"><i class="bi bi-person-circle"></i></h5>
+									<p class="card-text">Atendimento Fonoaudiólogo</p>
+								</button>
+							</div>
+
+							<div class="col-auto">
+								<button class="card-body">
+									<h5 class="card-title"><i class="bi bi-person-circle"></i></h5>
+									<p class="card-text">Atendimento durante a internação</p>
+								</button>
 							</div>
 						</div>
 
@@ -100,16 +163,7 @@
 							<div class="col-auto">
 								<label>Obrigatório *</label>
 								<select class="form-select" aria-label="Default select example">
-									<option selected>Tipo de Instituição</option>
-									<option>null</option>
-									<option>null</option>
-									<option>null</option>
-								</select>
-							</div>
-							<div class="col-auto">
-								<label>Obrigatório *</label>
-								<select class="form-select" aria-label="Default select example">
-									<option selected>Instituição de Saúde</option>
+									<option selected>Selecione o profissional que lhe atendeu</option>
 									<option>null</option>
 									<option>null</option>
 									<option>null</option>
@@ -117,24 +171,9 @@
 							</div>
 						</div>
 
-						<div class="row g-2">
-							<div class="col-auto">
-								<!-- <label class="labelVazio"></label> -->
-								<input type="text" class="form-control pesquisaPc" name="subject" id="subject"
-									placeholder="Pesquisar paciente por Cpf ou CNS" required>
-							</div>
-							<div class="col-auto">
-								<!-- <label class="labelVazio"></label> -->
-								<select class="form-select" aria-label="Default select example">
-									<option selected>Atendimentos recentes</option>
-									<option>null</option>
-									<option>null</option>
-									<option>null</option>
-								</select>
-							</div>
-						</div>
-					</form>
-					<!-- End Form -->
+
+					</div>
+					<!-- End Cards -->
 
 					<div class="ButtonsInst">
 						<a href="#" class="btn-get-started-secondary scrollto">Voltar</a>
@@ -142,15 +181,8 @@
 
 					</div>
 				</div>
-
-				<div class="col-lg-5 order-1 order-lg-2 hero-img d-flex justify-content-center" data-aos="fade-left"
-					data-aos-delay="200">
-					<img src="./assets/img/image04.svg" class="img-fluid animated" alt="">
-				</div>
-
 			</div>
 		</div>
-
 	</section><!-- End Hero -->
 
 
