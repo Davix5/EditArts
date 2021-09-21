@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-	<title>Identificação do Pacientes</title>
+	<title>Instituição de Saúde</title>
 	<meta content="" name="description">
 	<meta content="" name="keywords">
 
@@ -28,7 +28,7 @@
 	<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
 	<!-- Template Main CSS File -->
-	<link href="assets/css/paciente.css" rel="stylesheet">
+	<link href="assets/css/instituicao.css" rel="stylesheet">
 
 
 </head>
@@ -60,7 +60,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-					<h1 data-aos="fade-up">1 - Dados Básicos</h1>
+					<h1 data-aos="fade-up">2 - Instituição de Saúde</h1>
 					<h2 data-aos="fade-up" data-aos-delay="400">Dados obrigátorios são acompanhados de *
 					</h2>
 
@@ -68,38 +68,9 @@
 					<form class="row" action="">
 						<div class="row g-2">
 							<div class="col-auto">
-								<input type="text" class="form-control" name="subject" id="subject"
-									placeholder="Iforme seu nome" required>
-							</div>
-							<div class="col-auto">
-								<input type="email" class="form-control" name="subject" id="subject"
-									placeholder="Iforme seu email" required>
-							</div>
-						</div>
-
-						<div class="row g-2">
-							<div class="col-auto">
-								<input type="text" class="form-control" name="subject" id="subject"
-									placeholder="Iforme seu CPF ou RG" required>
-
-							</div>
-							<div class="col-auto">
-								<input type="text" class="form-control" name="subject" id="subject"
-									placeholder="Iforme seu telefone 1" required>
-
-							</div>
-
-							<div class="col-auto">
-								<input type="text" class="form-control" name="subject" id="subject"
-									placeholder="Iforme seu telefone 2" required>
-							</div>
-						</div>
-
-						<div class="row g-2">
-							<div class="col-auto">
 								<label>Obrigatório *</label>
 								<select class="form-select" aria-label="Default select example">
-									<option selected>Ano do Nascimento</option>
+									<option selected>Selecione o UF</option>
 									<option>null</option>
 									<option>null</option>
 									<option>null</option>
@@ -108,7 +79,16 @@
 							<div class="col-auto">
 								<label>Obrigatório *</label>
 								<select class="form-select" aria-label="Default select example">
-									<option selected>Sexo</option>
+									<option selected>Selecione o Município</option>
+									<option>null</option>
+									<option>null</option>
+									<option>null</option>
+								</select>
+							</div>
+							<div class="col-auto">
+								<label>Obrigatório *</label>
+								<select class="form-select" aria-label="Default select example">
+									<option selected>Bairro/Distrito</option>
 									<option>null</option>
 									<option>null</option>
 									<option>null</option>
@@ -120,7 +100,7 @@
 							<div class="col-auto">
 								<label>Obrigatório *</label>
 								<select class="form-select" aria-label="Default select example">
-									<option selected>Grau de Escolaridade</option>
+									<option selected>Tipo de Instituição</option>
 									<option>null</option>
 									<option>null</option>
 									<option>null</option>
@@ -129,16 +109,24 @@
 							<div class="col-auto">
 								<label>Obrigatório *</label>
 								<select class="form-select" aria-label="Default select example">
-									<option selected>Nivel de Renda Familiar</option>
+									<option selected>Instituição de Saúde</option>
 									<option>null</option>
 									<option>null</option>
 									<option>null</option>
 								</select>
 							</div>
+						</div>
+
+						<div class="row g-2">
 							<div class="col-auto">
-								<label>Obrigatório *</label>
+								<!-- <label class="labelVazio"></label> -->
+								<input type="text" class="form-control pesquisaPc" name="subject" id="subject"
+									placeholder="Pesquisar paciente por Cpf ou CNS" required>
+							</div>
+							<div class="col-auto">
+								<!-- <label class="labelVazio"></label> -->
 								<select class="form-select" aria-label="Default select example">
-									<option selected>Possui Plano de Saúde</option>
+									<option selected>Atendimentos recentes</option>
 									<option>null</option>
 									<option>null</option>
 									<option>null</option>
@@ -149,13 +137,15 @@
 					<!-- End Form -->
 
 					<div class="ButtonsInst">
+						<a href="#about" class="btn-get-started-secondary scrollto">Voltar</a>
 						<a href="#about" class="btn-get-started scrollto">Próximo <i class="bi bi-arrow-right"></i></a>
+
 					</div>
 				</div>
 
 				<div class="col-lg-5 order-1 order-lg-2 hero-img d-flex justify-content-center" data-aos="fade-left"
 					data-aos-delay="200">
-					<img src="./assets/img/image03.svg" class="img-fluid animated" alt="">
+					<img src="./assets/img/image04.svg" class="img-fluid animated" alt="">
 				</div>
 
 			</div>

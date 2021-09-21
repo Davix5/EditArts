@@ -395,7 +395,7 @@ h6 {
 
 #hero input {
 
-	width: 200px;
+	width: 275px;
 	height: 40px;
 
 	background: #FFFFFF;
@@ -417,6 +417,8 @@ h6 {
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
+
+
 #hero label {
 	font-family: Poppins;
 	font-style: normal;
@@ -426,6 +428,14 @@ h6 {
 	width: 200px;
 
 	text-align: right;
+}
+
+.labelVazio {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 12px;
 }
 
 #hero select {
