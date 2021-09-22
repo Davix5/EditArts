@@ -80,7 +80,7 @@ h6 {
 #header {
   z-index: 997;
   transition: all 0.5s;
-  padding: 25px 0 4px 0;
+  padding: 20px 0 4px 0;
   background: #fff;
 }
 
@@ -356,7 +356,7 @@ h6 {
 }
 
 #hero h1 {
-  margin: 0 0 10px 0;
+  margin: 20px 0 20px 0;
   font-family: Poppins;
   font-style: normal;
   font-weight: 500;
@@ -443,7 +443,7 @@ h6 {
 
   line-height: 21px;
   font-family: Poppins;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 12px;
   border-radius: 100px;
   letter-spacing: 1px;
@@ -502,7 +502,7 @@ h6 {
   }
 
   #hero {
-    margin-top: -90px;
+    margin-top: -20px;
   }
 
   #hero h1 {
@@ -562,11 +562,26 @@ h6 {
   #hero .btn-get-started {
     width: 100%;
     text-align: center;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+
+    padding: 15px 100px 14px 100px;
   }
 
   #hero .btn-get-started-secondary {
     width: 100%;
     text-align: center;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+
+    color: #0FA9EA;
+
+    background: #FFFFFF;
+
   }
 }
 
