@@ -1,0 +1,190 @@
+/* line 1, ../sass/components/_progress.scss */
+
+.text-center {
+    text-align: center;
+}
+
+.progress {
+    margin: 50px 0 0 0;
+    padding: 0;
+    list-style: none;
+    color: #b7b7b7;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    font-size: 0.8em;
+    background: transparent;
+}
+
+/* line 11, ../sass/components/_progress.scss */
+.progress.vertical>li {
+    display: block;
+    min-height: 64px;
+    margin-left: 30px;
+    text-align: left;
+}
+
+/* line 17, ../sass/components/_progress.scss */
+.progress.vertical>li:first-child:after {
+    display: block;
+}
+
+/* line 22, ../sass/components/_progress.scss */
+.progress.vertical>li:last-child:after {
+    display: none;
+}
+
+/* line 27, ../sass/components/_progress.scss */
+.progress.vertical>li.active:after {
+    background: #0FA9EA;
+}
+
+/* line 31, ../sass/components/_progress.scss */
+.progress.vertical>li:after {
+    width: 2px;
+    height: 100%;
+    display: block;
+    left: -17px;
+    top: 0;
+    margin-left: 0;
+}
+
+/* line 39, ../sass/components/_progress.scss */
+.progress.vertical>li:before {
+    float: left;
+    display: inline-block;
+    margin-left: -30px;
+    position: absolute;
+}
+
+/* line 122, ../sass/components/_progress.scss */
+.progress>li {
+    display: table-cell;
+    text-align: center;
+    position: relative;
+}
+
+/* line 127, ../sass/components/_progress.scss */
+.progress>li.active:before {
+    background: #0FA9EA;
+
+}
+
+/* line 130, ../sass/components/_progress.scss */
+.progress>li.active:after {
+    background: #444849;
+}
+
+/* line 134, ../sass/components/_progress.scss */
+
+/* Parte da Bolinha da Navbar */
+.progress>li:before {
+    position: relative;
+    content: attr(data-step);
+    width: 30px;
+    height: 30px;
+    display: block;
+    margin: 0px auto 2px;
+    line-height: 22px;
+    background: #E5E5E5;
+    border-radius: 100%;
+    text-align: center;
+    color: #ffffff;
+    z-index: 1;
+
+}
+
+/* line 148, ../sass/components/_progress.scss */
+.progress>li:after {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    display: block;
+    top: 11px;
+    left: -50%;
+    content: '';
+    background: #E5E5E5;
+    margin-left: 2px;
+    z-index: -1;
+}
+
+/* line 161, ../sass/components/_progress.scss */
+.progress>li:first-child:after {
+    display: none;
+}
+
+
+/* line 62, ../sass/components/_progress.scss */
+.progress.vertical.center>li {
+    margin-left: 0;
+    float: left;
+    width: 50%;
+    clear: right;
+    padding-right: 0px;
+    margin: 0;
+    padding-left: 0;
+    box-sizing: border-box;
+}
+
+/* line 70, ../sass/components/_progress.scss */
+.progress.vertical.center>li>.progress-icon {
+    border: 1px solid #b7b7b7;
+    padding: 5px 10px;
+    background: #ffffff;
+}
+
+/* line 74, ../sass/components/_progress.scss */
+.progress.vertical.center>li>.progress-icon:before {
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 8px solid #b7b7b7;
+    content: '';
+    position: absolute;
+    right: 23px;
+    top: 15px;
+    margin-top: -10px;
+}
+
+/* line 87, ../sass/components/_progress.scss */
+.progress.vertical.center>li:before {
+    right: -11px;
+    left: auto;
+    margin-left: 0;
+}
+
+/* line 92, ../sass/components/_progress.scss */
+.progress.vertical.center>li:after {
+    right: 3px;
+    left: auto;
+}
+
+/* line 96, ../sass/components/_progress.scss */
+.progress.vertical.center>li:nth-child(2n) {
+    float: right;
+    clear: left;
+    padding-left: 30px;
+    margin: 0;
+    padding-right: 0;
+}
+
+/* line 103, ../sass/components/_progress.scss */
+.progress.vertical.center>li:nth-child(2n)>.progress-icon:before {
+    border-left: 0 none;
+    border-right: 8px solid #b7b7b7;
+    right: auto;
+    left: 23px;
+}
+
+/* line 110, ../sass/components/_progress.scss */
+.progress.vertical.center>li:nth-child(2n):before {
+    left: -19px;
+    right: auto;
+}
+
+/* line 114, ../sass/components/_progress.scss */
+.progress.vertical.center>li:nth-child(2n):after {
+    left: -5px;
+    right: auto;
+}
