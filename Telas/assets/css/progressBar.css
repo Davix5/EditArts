@@ -5,21 +5,21 @@
 }
 
 .progress {
-    margin: 50px 0 0 0;
+    margin: 40px 0 0 0;
     padding: 0;
     list-style: none;
     color: #b7b7b7;
     display: table;
     table-layout: fixed;
     width: 100%;
-    font-size: 0.8em;
+    font-size: 14px;
     background: transparent;
 }
 
 /* line 11, ../sass/components/_progress.scss */
 .progress.vertical>li {
     display: block;
-    min-height: 64px;
+    min-height: 90px;
     margin-left: 30px;
     text-align: left;
 }
@@ -35,19 +35,26 @@
 }
 
 /* line 27, ../sass/components/_progress.scss */
+
+/* Linha Vertical Ativa */
 .progress.vertical>li.active:after {
-    background: #0FA9EA;
+    background: #0fa8ea9c;
+}
+
+.progress.vertical>li.moment:after {
+    background: linear-gradient(to bottom, #0fa8ea9c 70%, #E5E5E5 50%);
 }
 
 /* line 31, ../sass/components/_progress.scss */
 .progress.vertical>li:after {
-    width: 2px;
+    width: 3px;
     height: 100%;
     display: block;
     left: -17px;
     top: 0;
     margin-left: 0;
 }
+
 
 /* line 39, ../sass/components/_progress.scss */
 .progress.vertical>li:before {
@@ -65,9 +72,14 @@
 }
 
 /* line 127, ../sass/components/_progress.scss */
+
+/* Cor de fundo da Bolinha */
 .progress>li.active:before {
     background: #0FA9EA;
+}
 
+.progress>li.moment:before {
+    box-shadow: 0px 0px 0px 3px #fff, 0 0 0px 4px #0FA9EA;
 }
 
 /* line 130, ../sass/components/_progress.scss */
@@ -95,6 +107,8 @@
 }
 
 /* line 148, ../sass/components/_progress.scss */
+
+/* Linha Não ativa */
 .progress>li:after {
     position: absolute;
     width: 100%;

@@ -425,6 +425,10 @@ h6 {
 	filter: drop-shadow(0px 4px 20px rgba(22, 25, 26, 0.1));
 }
 
+.hero-navbar {
+	padding: 0 30px 0 0;
+}
+
 #hero label {
 	font-family: Poppins;
 	font-style: normal;
