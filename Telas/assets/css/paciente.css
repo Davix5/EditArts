@@ -593,6 +593,9 @@ h6 {
 
 @media (max-width: 768px) {
 
+	.hero-navbar {
+		padding: 0 0 0 0;
+	}
 
 	/* Mobile */
 	#header {
@@ -624,6 +627,10 @@ h6 {
 		font-size: 14px;
 		line-height: 21px;
 		color: rgba(0, 0, 0, 0.4);
+	}
+
+	#hero .hero-img img {
+		display: none;
 	}
 
 	#hero input {
@@ -682,7 +689,7 @@ h6 {
 }
 
 @media (max-width: 575px) {
-	#hero .hero-img img {
+	.mobile-hidden {
 		display: none;
 	}
 }

@@ -45,6 +45,7 @@
     background: linear-gradient(to bottom, #0fa8ea9c 70%, #E5E5E5 50%);
 }
 
+
 /* line 31, ../sass/components/_progress.scss */
 .progress.vertical>li:after {
     width: 3px;
@@ -84,8 +85,9 @@
 
 /* line 130, ../sass/components/_progress.scss */
 .progress>li.active:after {
-    background: #444849;
+    background: #0fa8ea9c;
 }
+
 
 /* line 134, ../sass/components/_progress.scss */
 
@@ -112,7 +114,7 @@
 .progress>li:after {
     position: absolute;
     width: 100%;
-    height: 2px;
+    height: 2.5px;
     display: block;
     top: 11px;
     left: -50%;
@@ -120,6 +122,12 @@
     background: #E5E5E5;
     margin-left: 2px;
     z-index: -1;
+}
+
+/* Linha Horizontal */
+.progress>li.line:after {
+    /* background: #000; */
+    background: linear-gradient(to right, #0fa8ea9c 50%, #E5E5E5 50%);
 }
 
 /* line 161, ../sass/components/_progress.scss */
@@ -201,4 +209,18 @@
 .progress.vertical.center>li:nth-child(2n):after {
     left: -5px;
     right: auto;
+}
+
+#hero .progress-mobile {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    #hero .progress-desktop {
+        display: none;
+    }
+
+    #hero .progress-mobile {
+        display: block;
+    }
 }
