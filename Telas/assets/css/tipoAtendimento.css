@@ -521,8 +521,12 @@ h6 {
 }
 
 @media (max-width: 991px) {
-	#hero {
+	/* #hero {
 		height: 100vh;
+	} */
+
+	.hero-navbar {
+		padding: 0 0 0 0;
 	}
 
 	#hero .animated {
