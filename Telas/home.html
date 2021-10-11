@@ -28,6 +28,7 @@
 	<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
 	<!-- Template Main CSS File -->
+	<link href="assets/css/mainModal.css" rel="stylesheet">
 	<link href="assets/css/home.css" rel="stylesheet">
 
 
@@ -67,7 +68,8 @@
 
 
 					<div data-aos="fade-up" data-aos-delay="800">
-						<a href="#" class="btn-get-started scrollto">Iniciar Avaliação</a>
+						<a href="#" class="btn-get-started scrollto" data-bs-toggle="modal"
+							data-bs-target="#staticBackdrop">Iniciar Avaliação</a>
 						<a href="#" class="btn-get-started-secondary scrollto">Instruções</a>
 						<a href="#" class="btn-get-started-secondary scrollto">Termos e Condições</a>
 
@@ -91,6 +93,47 @@
 		</div>
 
 	</section><!-- End Hero -->
+
+
+	<!--  -->
+	<!--  -->
+	<!--  -->
+	<!-- Modal -->
+	<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+		aria-labelledby="staticBackdropLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="staticBackdropLabel">Termos e Condições</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>O presente termo estabelece obrigações contratadas de livre e espontanea vontade, por tempo
+						indeterminado, entre a plataforma e as pessoas físicas ou júridicas, usuarias do site</p>
+					<p>Ao utilizar a plataforma o usuário aceita integralmente as presentes normas e compromete-se a
+						observa-las, sob o risco de aplicação das penalidades cabíveis</p>
+					<p>A aceitação do presente instrumento é imprescindivel para o acesso e para a utilização de
+						quaisquer serviços fornecidos pela empresa. Caso não concorde com as disposições
+						deste instrumento, o usuário não deve utilizala </p>
+
+					<p>
+						<input type="checkbox" class="inputCheck">
+						<spam class="check">Li e concordo com os termos LGPD</spam>
+					</p>
+				</div>
+				<div class="modal-footer">
+					<a href="#" class="btn-back" data-bs-dismiss="modal">Voltar</a>
+					<a href="#" class="btn-confirm">Confirmar</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Modal -->
+	<!--  -->
+	<!--  -->
+	<!--  -->
+
 
 	<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
 			class="bi bi-arrow-up-short"></i></a>
