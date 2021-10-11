@@ -392,6 +392,14 @@ h6 {
 	padding-bottom: 10px;
 }
 
+.titleForms {
+	display: none;
+}
+
+.titleMobile {
+	display: none;
+}
+
 .card-body {
 	width: 200px;
 	height: 90px;
@@ -483,9 +491,9 @@ h6 {
 	filter: drop-shadow(0px 4px 4px rgba(22, 25, 26, 0.25));
 }
 
-
-
-
+#hero .ButtonsInst .btnVoltar02 {
+	display: none;
+}
 
 #hero .btn-get-started-secondary {
 
@@ -521,9 +529,7 @@ h6 {
 }
 
 @media (max-width: 991px) {
-	/* #hero {
-		height: 100vh;
-	} */
+
 
 	.hero-navbar {
 		padding: 0 0 0 0;
@@ -548,10 +554,6 @@ h6 {
 	/* Mobile */
 	#header {
 		display: none !important;
-	}
-
-	#hero {
-		margin-top: -100px;
 	}
 
 	#hero h1 {
@@ -624,10 +626,107 @@ h6 {
 }
 
 @media (max-width: 575px) {
+
 	#hero .hero-img img {
 		display: none;
 	}
+
+	.pt-5 {
+		padding-top: 1rem !important;
+	}
+
+	.mobile-hidden {
+		display: none;
+	}
+
+	.wrapper2 {
+		padding-left: 15px;
+	}
+
+	.titleForms {
+		display: block;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 12px;
+		padding: 0 0 0 20px;
+		color: #0FA9EA;
+	}
+
+	.titleDesktop {
+		display: none;
+	}
+
+	.titleMobile {
+		display: block;
+	}
+
+	.card-body {
+		width: 159px;
+		height: 90px;
+	}
+
+	#hero .card-body p {
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 12px;
+		line-height: 18px;
+
+		color: rgba(22, 25, 26, 0.3);
+	}
+
+	.card-body:focus {
+		color: #fff;
+	}
+
+	#hero select {
+		width: 328px;
+		margin-left: 11px;
+	}
+
+	#hero .ButtonsInst .btnVoltar01 {
+		display: none;
+	}
+
+	#hero .ButtonsInst .btnVoltar02 {
+		display: block;
+	}
+
+	#hero .ButtonsInst {
+		padding-top: 20px;
+	}
+
+
+	#hero .btn-get-started {
+		/* margin-top: 0px; */
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 24px;
+		color: #FFFFFF;
+		background: #0FA9EA;
+		border-radius: 4px;
+		/* superior | direita | inferior | esquerda */
+		padding: 16px 0px 16px 0px;
+		text-align: center;
+	}
+
+	#hero .btn-get-started-secondary {
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 24px;
+		color: #0FA9EA;
+		/* superior | direita | inferior | esquerda */
+		padding: 16px 0px 16px 0px;
+		text-align: center;
+	}
 }
+
 
 
 
@@ -637,6 +736,13 @@ h6 {
 section {
 	padding: 30px 0;
 	overflow: hidden;
+}
+
+@media (max-width:520px) {
+	section {
+		padding: 0px 0;
+		overflow: hidden;
+	}
 }
 
 .section-bg {

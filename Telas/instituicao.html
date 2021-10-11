@@ -66,78 +66,58 @@
 					<div class="row">
 						<div class="progress-desktop">
 							<ul class="progress vertical center">
-								<li data-step="01" class="active"></li>
-								<li data-step="02" class="active moment"></li>
-								<li data-step="03"></li>
-								<li data-step="04"></li>
-								<li data-step="05"></li>
+								<li data-step="1" class="active"></li>
+								<li data-step="2" class="active moment"></li>
+								<li data-step="3"></li>
+								<li data-step="4"></li>
+								<li data-step="5"></li>
 							</ul>
 						</div>
 
 						<div class="progress-mobile">
 							<ul class="progress">
-								<li data-step="01" class="active">Dados</li>
-								<li data-step="02" class="active moment">Instituição</li>
-								<li data-step="03" class="line">Tipo</li>
-								<li data-step="04">Questão</li>
-								<li data-step="05">FeedBack</li>
+								<li data-step="1" class="active">Dados</li>
+								<li data-step="2" class="active moment">Instituição</li>
+								<li data-step="3" class="line">Tipo</li>
+								<li data-step="4">Questão</li>
+								<li data-step="5">FeedBack</li>
 							</ul>
 						</div>
 					</div>
 				</div>
 
-
 				<div class="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-2 d-flex flex-column justify-content-center">
-					<h1 data-aos="fade-up">2 - Instituição de Saúde</h1>
-					<h2 data-aos="fade-up" data-aos-delay="400">Dados obrigátorios são acompanhados de *
+					<h1 data-aos="fade-up" class="mobile-hidden">2 - Instituição de Saúde</h1>
+					<h2 data-aos="fade-up" data-aos-delay="400" class="mobile-hidden">Dados obrigátorios são
+						acompanhados de *
 					</h2>
 
 					<!-- Form -->
 					<form class="row" action="">
 						<div class="row g-2">
-							<div class="col-auto">
+							<h3 class="titleForms">Instituição de Saúde</h3>
+							<div class="col-auto wrapper2">
 								<label>Obrigatório *</label>
 								<select class="form-select" aria-label="Default select example">
-									<option selected>Selecione o UF</option>
+									<option selected disabled>Selecione o UF</option>
 									<option>null</option>
 									<option>null</option>
 									<option>null</option>
 								</select>
 							</div>
-							<div class="col-auto">
+							<div class="col-auto wrapper2">
 								<label>Obrigatório *</label>
 								<select class="form-select" aria-label="Default select example">
-									<option selected>Selecione o Município</option>
+									<option selected disabled>Selecione o Município</option>
 									<option>null</option>
 									<option>null</option>
 									<option>null</option>
 								</select>
 							</div>
-							<div class="col-auto">
+							<div class="col-auto wrapper2">
 								<label>Obrigatório *</label>
 								<select class="form-select" aria-label="Default select example">
-									<option selected>Bairro/Distrito</option>
-									<option>null</option>
-									<option>null</option>
-									<option>null</option>
-								</select>
-							</div>
-						</div>
-
-						<div class="row g-2">
-							<div class="col-auto">
-								<label>Obrigatório *</label>
-								<select class="form-select" aria-label="Default select example">
-									<option selected>Tipo de Instituição</option>
-									<option>null</option>
-									<option>null</option>
-									<option>null</option>
-								</select>
-							</div>
-							<div class="col-auto">
-								<label>Obrigatório *</label>
-								<select class="form-select" aria-label="Default select example">
-									<option selected>Instituição de Saúde</option>
+									<option selected disabled>Bairro/Distrito</option>
 									<option>null</option>
 									<option>null</option>
 									<option>null</option>
@@ -146,15 +126,39 @@
 						</div>
 
 						<div class="row g-2">
-							<div class="col-auto">
-								<!-- <label class="labelVazio"></label> -->
-								<input type="text" class="form-control pesquisaPc" name="subject" id="subject"
-									placeholder="Pesquisar paciente por Cpf ou CNS" required>
-							</div>
-							<div class="col-auto">
-								<!-- <label class="labelVazio"></label> -->
+							<div class="col-auto wrapper2">
+								<label>Obrigatório *</label>
 								<select class="form-select" aria-label="Default select example">
-									<option selected>Atendimentos recentes</option>
+									<option selected disabled>Tipo de Instituição</option>
+									<option>null</option>
+									<option>null</option>
+									<option>null</option>
+								</select>
+							</div>
+							<div class="col-auto wrapper2">
+								<label>Obrigatório *</label>
+								<select class="form-select" aria-label="Default select example">
+									<option selected disabled>Instituição de Saúde</option>
+									<option>null</option>
+									<option>null</option>
+									<option>null</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="row g-2">
+							<h3 class="titleForms titleForms2">Pesquisa por paciente</h3>
+							<div class="col-auto">
+								<div class="wrapper">
+									<input spellcheck="false">
+									<div class="label">
+										Pesquisar paciente por cpf ou CNS
+									</div>
+								</div>
+							</div>
+							<div class="col-auto wrapper3">
+								<select class="form-select" aria-label="Default select example">
+									<option selected disabled>Atendimentos recentes</option>
 									<option>null</option>
 									<option>null</option>
 									<option>null</option>
@@ -165,9 +169,9 @@
 					<!-- End Form -->
 
 					<div class="ButtonsInst">
-						<a href="#" class="btn-get-started-secondary scrollto">Voltar</a>
+						<a href="#" class="btn-get-started-secondary scrollto btnVoltar01">Voltar</a>
 						<a href="#" class="btn-get-started scrollto">Próximo <i class="bi bi-arrow-right"></i></a>
-
+						<a href="#" class="btn-get-started-secondary scrollto btnVoltar02">Voltar</a>
 					</div>
 				</div>
 

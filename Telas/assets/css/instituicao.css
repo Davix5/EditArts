@@ -365,12 +365,17 @@ h6 {
 --------------------------------------------------------------*/
 #hero {
 	width: 100%;
-	height: 70vh;
 	margin-top: 50px;
 }
 
 .hero-navbar {
 	padding: 0 30px 0 0;
+}
+
+.wrapper {
+	position: relative;
+	display: flex;
+	height: 4rem;
 }
 
 
@@ -403,12 +408,16 @@ h6 {
 
 }
 
+
+.titleForms {
+	display: none;
+}
+
 #hero input {
 
 	width: 275px;
 	height: 40px;
 
-	background: #FFFFFF;
 	border: 1px solid #E5E5E5;
 	box-sizing: border-box;
 	border-radius: 4px;
@@ -421,12 +430,40 @@ h6 {
 	line-height: 12px;
 
 	color: rgba(22, 25, 26, 0.5);
+	outline: none;
+	background: transparent;
+	text-indent: 1rem;
+	transition: all 0.35s;
 }
 
 #hero input:focus {
-	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+	border-color: #0FA9EA;
 }
 
+#hero input:focus~.label {
+	background: #fff;
+	color: #0FA9EA;
+	transform: translateY(-2rem);
+	font-size: 12px;
+}
+
+#hero .label {
+	position: absolute;
+	top: 30%;
+	left: 0.65rem;
+	transform: translateY(-50%);
+	color: #888;
+	padding: 0.25rem 0.5rem;
+	pointer-events: none;
+	transition: all 0.35s;
+
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 12px;
+	color: rgba(22, 25, 26, 0.5);
+	font-size: 14px;
+}
 
 
 #hero label {
@@ -436,17 +473,9 @@ h6 {
 	font-size: 12px;
 	line-height: 12px;
 	width: 200px;
-
 	text-align: right;
 }
 
-.labelVazio {
-	font-family: Poppins;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 12px;
-	line-height: 12px;
-}
 
 #hero select {
 
@@ -497,6 +526,9 @@ h6 {
 	color: #E5E5E5;
 }
 
+#hero .ButtonsInst .btnVoltar02 {
+	display: none;
+}
 
 #hero .btn-get-started {
 
@@ -558,9 +590,6 @@ h6 {
 }
 
 @media (max-width: 991px) {
-	#hero {
-		height: 100vh;
-	}
 
 	#hero .animated {
 		-webkit-animation: none;
@@ -584,7 +613,11 @@ h6 {
 	}
 
 	#hero {
-		margin-top: -100px;
+		margin-top: 0px;
+	}
+
+	.hero-navbar {
+		padding: 0 0 0 0;
 	}
 
 	#hero h1 {
@@ -658,8 +691,107 @@ h6 {
 }
 
 @media (max-width: 575px) {
+
+	.pt-5 {
+		padding-top: 1rem !important;
+	}
+
+	.mobile-hidden {
+		display: none;
+	}
+
+	.titleForms {
+		display: block;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 12px;
+		padding: 0 0 0 10px;
+		color: #0FA9EA;
+	}
+
 	#hero .hero-img img {
 		display: none;
+	}
+
+	#hero .ButtonsInst .btnVoltar01 {
+		display: none;
+	}
+
+	#hero .ButtonsInst .btnVoltar02 {
+		display: block;
+	}
+
+	#hero .ButtonsInst {
+		padding-top: 20px;
+	}
+
+
+	#hero .btn-get-started {
+		/* margin-top: 0px; */
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 24px;
+		color: #FFFFFF;
+		background: #0FA9EA;
+		border-radius: 4px;
+		/* superior | direita | inferior | esquerda */
+		padding: 16px 0px 16px 0px;
+		text-align: center;
+	}
+
+	#hero .btn-get-started-secondary {
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 24px;
+		color: #0FA9EA;
+		/* superior | direita | inferior | esquerda */
+		padding: 16px 0px 16px 0px;
+		text-align: center;
+	}
+}
+
+@media (max-width: 520px) {
+	.wrapper {
+		padding-left: 10px;
+	}
+
+	.wrapper2 {
+		padding-left: 11px;
+	}
+
+	.wrapper3 {
+		padding-left: 13px;
+	}
+
+	.titleForms {
+		padding: 0 0 0 20px;
+	}
+
+	.titleForms2 {
+		padding: 0 0 0 20px;
+		margin-top: 32px;
+	}
+
+	#hero input {
+		width: 335px;
+	}
+
+	#hero label {
+		font-weight: 300;
+		font-size: 10px;
+		line-height: 12px;
+		width: 335px;
+
+	}
+
+	#hero select {
+		width: 335px;
 	}
 }
 
@@ -669,7 +801,7 @@ h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-	padding: 60px 0;
+	padding: 0px 0;
 	overflow: hidden;
 }
 

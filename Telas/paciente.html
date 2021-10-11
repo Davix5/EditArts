@@ -66,21 +66,21 @@
 					<div class="row">
 						<div class="progress-desktop">
 							<ul class="progress vertical center">
-								<li data-step="01" class="active moment"></li>
-								<li data-step="02"></li>
-								<li data-step="03"></li>
-								<li data-step="04"></li>
-								<li data-step="05"></li>
+								<li data-step="1" class="active moment"></li>
+								<li data-step="2"></li>
+								<li data-step="3"></li>
+								<li data-step="4"></li>
+								<li data-step="5"></li>
 							</ul>
 						</div>
 
 						<div class="progress-mobile">
 							<ul class="progress">
-								<li data-step="01" class="active moment">Dados</li>
-								<li data-step="02" class="line">Instituição</li>
-								<li data-step="03">Tipo</li>
-								<li data-step="04">Questão</li>
-								<li data-step="05">FeedBack</li>
+								<li data-step="1" class="active moment">Dados</li>
+								<li data-step="2" class="line">Instituição</li>
+								<li data-step="3">Tipo</li>
+								<li data-step="4">Questão</li>
+								<li data-step="5">FeedBack</li>
 							</ul>
 						</div>
 					</div>
@@ -98,7 +98,8 @@
 					<!-- Form -->
 					<form class="row" action="">
 						<div class="row g-2">
-							<div class="col-auto">
+							<h3 class="titleForms">Dados Gerais</h3>
+							<div class="col-auto justify-content-center">
 								<div class="wrapper">
 									<input spellcheck="false">
 									<div class="label">
@@ -110,17 +111,19 @@
 								<div class="wrapper">
 									<input spellcheck="false">
 									<div class="label">
-										Informe seu email
+										Informe seu CPF ou RG
 									</div>
 								</div>
 							</div>
 						</div>
+
 						<div class="row g-2">
+							<h3 class="titleForms">Contatos</h3>
 							<div class="col-auto">
 								<div class="wrapper">
 									<input spellcheck="false">
 									<div class="label">
-										Informe seu CPF ou RG
+										Informe seu Email
 									</div>
 								</div>
 							</div>
@@ -144,9 +147,10 @@
 						</div>
 
 						<div class="row g-2">
-							<div class="col-auto">
-								<label>Obrigatório *</label>
-								<select class="form-select" aria-label="Default select example">
+							<h3 class="titleForms">Dados Extras</h3>
+							<div class="col-auto wrapper2">
+								<label class="dateNasc">Obrigatório *</label>
+								<select class="form-select dateNasc" aria-label="Default select example">
 									<option selected>Ano do Nascimento</option>
 									<option>null</option>
 									<option>null</option>
@@ -154,8 +158,8 @@
 								</select>
 							</div>
 							<div class="col-auto">
-								<label>Obrigatório *</label>
-								<select class="form-select" aria-label="Default select example">
+								<label class="sexo">Obrigatório *</label>
+								<select class="form-select sexo" aria-label="Default select example">
 									<option selected>Sexo</option>
 									<option>null</option>
 									<option>null</option>
@@ -165,27 +169,27 @@
 						</div>
 
 						<div class="row g-2">
-							<div class="col-auto">
-								<label>Obrigatório *</label>
-								<select class="form-select" aria-label="Default select example">
+							<div class="col-auto wrapper2">
+								<label class="escolaridade">Obrigatório *</label>
+								<select class="form-select escolaridade" aria-label="Default select example">
 									<option selected>Grau de Escolaridade</option>
 									<option>null</option>
 									<option>null</option>
 									<option>null</option>
 								</select>
 							</div>
-							<div class="col-auto">
-								<label>Obrigatório *</label>
-								<select class="form-select" aria-label="Default select example">
+							<div class="col-auto wrapper2">
+								<label class="nivelRenda">Obrigatório *</label>
+								<select class="form-select nivelRenda" aria-label="Default select example">
 									<option selected>Nivel de Renda Familiar</option>
 									<option>null</option>
 									<option>null</option>
 									<option>null</option>
 								</select>
 							</div>
-							<div class="col-auto">
-								<label>Obrigatório *</label>
-								<select class="form-select" aria-label="Default select example">
+							<div class="col-auto wrapper2">
+								<label class="planoSaude">Obrigatório *</label>
+								<select class="form-select planoSaude" aria-label="Default select example">
 									<option selected>Possui Plano de Saúde</option>
 									<option>null</option>
 									<option>null</option>

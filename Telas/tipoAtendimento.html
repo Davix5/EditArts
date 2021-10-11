@@ -13,6 +13,11 @@
 	<link href="assets/img/favicon.png" rel="icon">
 	<link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
+
+	<!-- Font Awesome Icons -->
+	<link rel="stylesheet" href="assets/vendor/fontawesome-free-5.15.4-web/css/all.css">
+
+
 	<!-- Google Fonts -->
 	<link
 		href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
@@ -67,21 +72,21 @@
 					<div class="row">
 						<div class="progress-desktop">
 							<ul class="progress vertical center">
-								<li data-step="01" class="active"></li>
-								<li data-step="02" class="active"></li>
-								<li data-step="03" class="active moment"></li>
-								<li data-step="04"></li>
-								<li data-step="05"></li>
+								<li data-step="1" class="active"></li>
+								<li data-step="2" class="active"></li>
+								<li data-step="3" class="active moment"></li>
+								<li data-step="4"></li>
+								<li data-step="5"></li>
 							</ul>
 						</div>
 
 						<div class="progress-mobile">
 							<ul class="progress">
-								<li data-step="01" class="active">Dados</li>
-								<li data-step="02" class="active">Instituição</li>
-								<li data-step="03" class="active moment">Tipo</li>
-								<li data-step="04" class="line">Questão</li>
-								<li data-step="05">FeedBack</li>
+								<li data-step="1" class="active">Dados</li>
+								<li data-step="2" class="active">Instituição</li>
+								<li data-step="3" class="active moment">Tipo</li>
+								<li data-step="4" class="line">Questão</li>
+								<li data-step="5">FeedBack</li>
 							</ul>
 						</div>
 					</div>
@@ -89,100 +94,113 @@
 
 
 				<div class="col-lg-9 pt-5 pt-lg-0 order-2 order-lg-2 d-flex flex-column justify-content-center">
-					<h1 data-aos="fade-up">3 - Tipo de Atendimento</h1>
-					<h2 data-aos="fade-up" data-aos-delay="400">Dados obrigátorios são acompanhados de *
+					<h1 data-aos="fade-up" class="mobile-hidden">3 - Tipo de Atendimento</h1>
+					<h2 data-aos="fade-up" data-aos-delay="400" class="mobile-hidden">Dados obrigátorios são
+						acompanhados de *
 					</h2>
 
 					<!-- Cards -->
 					<div class="row">
 						<div class="row g-2">
-							<div class="col-auto">
+							<h3 class="titleForms">Instituição de Saúde</h3>
+							<div class="col-auto wrapper2">
 								<button class="card-body">
-									<h5 class="card-title"><i class="bi bi-person-circle"></i></h5>
-									<p class="card-text">Atendimento Médico</p>
+									<h5 class="card-title"><i class="fas fa-user-md"></i></h5>
+									<p class="card-text titleDesktop">Atendimento Médico</p>
+									<p class="card-text titleMobile">Atend. Médico</p>
 								</button>
 							</div>
 
 							<div class="col-auto">
 								<button class="card-body">
-									<h5 class="card-title"><i class="bi bi-person-circle"></i></h5>
-									<p class="card-text">Atendimento Enfermagem</p>
+									<h5 class="card-title"><i class="fa fa-user-nurse"></i></h5>
+									<p class="card-text titleDesktop">Atendimento Enfermagem</p>
+									<p class="card-text titleMobile">Atend. Enfermagem</p>
+								</button>
+							</div>
+
+							<div class="col-auto wrapper2">
+								<button class="card-body">
+									<h5 class="card-title"><i class="fas fa-tooth"></i></h5>
+									<p class="card-text titleDesktop">Atendimento Dentista</p>
+									<p class="card-text titleMobile">Atend. Dentista</p>
 								</button>
 							</div>
 
 							<div class="col-auto">
 								<button class="card-body">
-									<h5 class="card-title"><i class="bi bi-person-circle"></i></h5>
-									<p class="card-text">Atendimento Dentista</p>
-								</button>
-							</div>
-
-							<div class="col-auto">
-								<button class="card-body">
-									<h5 class="card-title"><i class="bi bi-person-circle"></i></h5>
-									<p class="card-text">Setor de Exames ou Laboratórios</p>
+									<h5 class="card-title"><i class="fas fa-diagnoses"></i></h5>
+									<p class="card-text titleDesktop">Setor de Exames ou Laboratórios</p>
+									<p class="card-text titleMobile">Exames ou Laboratórios</p>
 								</button>
 							</div>
 						</div>
 						<!--  -->
 						<!--  -->
 						<div class="row g-2">
-							<div class="col-auto">
+							<div class="col-auto wrapper2">
 								<button class="card-body">
-									<h5 class="card-title"><i class="bi bi-person-circle"></i></h5>
-									<p class="card-text">Setor Farmácia</p>
+									<h5 class="card-title"><i class="fas fa-clinic-medical"></i></h5>
+									<p class="card-text">Setor de Farmácia</p>
 								</button>
 							</div>
 
 							<div class="col-auto">
 								<button class="card-body">
-									<h5 class="card-title"><i class="bi bi-person-circle"></i></h5>
-									<p class="card-text">Atendimento Fisioterapia</p>
+									<h5 class="card-title"><i class="fas fa-user-md"></i></h5>
+									<p class="card-text titleDesktop">Atendimento Fisioterapia</p>
+									<p class="card-text titleMobile">Atend. Fisioterapia</p>
+								</button>
+							</div>
+
+							<div class="col-auto wrapper2">
+								<button class="card-body">
+									<h5 class="card-title"><i class="fas fa-carrot"></i></i></h5>
+									<p class="card-text titleDesktop">Atendimento Nutricionista</p>
+									<p class="card-text titleMobile">Atend. Nutricionista</p>
 								</button>
 							</div>
 
 							<div class="col-auto">
 								<button class="card-body">
-									<h5 class="card-title"><i class="bi bi-person-circle"></i></h5>
-									<p class="card-text">Atendimento Nutricionista</p>
-								</button>
-							</div>
-
-							<div class="col-auto">
-								<button class="card-body">
-									<h5 class="card-title"><i class="bi bi-person-circle"></i></h5>
-									<p class="card-text">Atendimento Terapia Ocupacional</p>
+									<h5 class="card-title"><i class="fas fa-user-md"></i></h5>
+									<p class="card-text titleDesktop">Atendimento Terapia Ocupacional</p>
+									<p class="card-text titleMobile">Terapia Ocupacional</p>
 								</button>
 							</div>
 						</div>
 						<!--  -->
 						<!--  -->
 						<div class="row g-2">
-							<div class="col-auto">
+							<div class="col-auto wrapper2">
 								<button class="card-body">
-									<h5 class="card-title"><i class="bi bi-person-circle"></i></h5>
-									<p class="card-text">Atedimento Psicologia</p>
+									<h5 class="card-title"><i class="fas fa-brain"></i></h5>
+									<p class="card-text titleDesktop">Atendimento Psicologia</p>
+									<p class="card-text titleMobile">Atend. Psicologia</p>
 								</button>
 							</div>
 
 							<div class="col-auto">
 								<button class="card-body">
-									<h5 class="card-title"><i class="bi bi-person-circle"></i></h5>
-									<p class="card-text">Atendimento Assistência Social</p>
+									<h5 class="card-title"><i class="fas fa-hands-helping"></i></h5>
+									<p class="card-text titleDesktop">Atendimento Assistência Social</p>
+									<p class="card-text titleMobile">Assistência Social</p>
+								</button>
+							</div>
+
+							<div class="col-auto wrapper2">
+								<button class="card-body">
+									<h5 class="card-title"><i class="fas fa-comments"></i></h5>
+									<p class="card-text titleDesktop">Atendimento Fonoaudiólogo</p>
+									<p class="card-text titleMobile">Atend. Fonoaudiólogo</p>
 								</button>
 							</div>
 
 							<div class="col-auto">
 								<button class="card-body">
-									<h5 class="card-title"><i class="bi bi-person-circle"></i></h5>
-									<p class="card-text">Atendimento Fonoaudiólogo</p>
-								</button>
-							</div>
-
-							<div class="col-auto">
-								<button class="card-body">
-									<h5 class="card-title"><i class="bi bi-person-circle"></i></h5>
-									<p class="card-text">Atendimento durante a internação</p>
+									<h5 class="card-title"><i class="fas fa-procedures"></i></h5>
+									<p class="card-text titleDesktop">Atendimento durante a internação</p>
+									<p class="card-text titleMobile">durante a internação</p>
 								</button>
 							</div>
 						</div>
@@ -204,8 +222,9 @@
 					<!-- End Cards -->
 
 					<div class="ButtonsInst">
-						<a href="#" class="btn-get-started-secondary scrollto">Voltar</a>
+						<a href="#" class="btn-get-started-secondary scrollto btnVoltar01">Voltar</a>
 						<a href="#" class="btn-get-started scrollto">Próximo <i class="bi bi-arrow-right"></i></a>
+						<a href="#" class="btn-get-started-secondary scrollto btnVoltar02">Voltar</a>
 					</div>
 				</div>
 			</div>
