@@ -113,7 +113,7 @@
 	margin-bottom: 30px;
 }
 
-#hero .ButtonsInst .btnVoltar02 {
+#hero .divsInst .btnVoltar02 {
 	display: none;
 }
 
@@ -312,11 +312,11 @@
 		display: none;
 	}
 
-	#hero .ButtonsInst .btnVoltar01 {
+	#hero .divsInst .btnVoltar01 {
 		display: none;
 	}
 
-	#hero .ButtonsInst .btnVoltar02 {
+	#hero .divsInst .btnVoltar02 {
 		display: block;
 	}
 
@@ -370,8 +370,14 @@
 # Sections General
 --------------------------------------------------------------*/
 #hero {
-	padding: 60px 0;
+	padding: 30px 0;
 	overflow: hidden;
+}
+
+@media (max-width: 520px) {
+	#hero {
+		padding: 60px 0;
+	}
 }
 
 .section-bg {
